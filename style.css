@@ -1,0 +1,143 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ddd;
+  line-height: 1.65;
+  padding-bottom: 1000px;
+}
+
+/* latihan 1 */
+.container-1 {
+  width: 800px;
+  margin: 50px auto;
+  background-color: white;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.col-utama {
+  flex: 3;
+  order: 2;
+}
+
+.side-1 {
+  flex: 1;
+  order: 1;
+}
+
+.side-2 {
+  flex: 1;
+  order: 3;
+}
+
+/* latihan 2 */
+.container-2 {
+  max-width: 800px;
+  margin: 50px auto;
+}
+
+.layanan {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.layanan.satu {
+  background-color: rgb(193, 193, 255);
+}
+
+.layanan.dua {
+  background-color: rgb(255, 255, 161);
+}
+
+.layanan.tiga {
+  background-color: rgb(255, 154, 154);
+}
+
+/* latihan 3 */
+.container-3 {
+  max-width: 1000px;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.thumbnail {
+  width: 50%;
+}
+
+.thumbnail img {
+  width: 100%;
+}
+
+/* responsive */
+@media (min-width: 600px) {
+  .container-2 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .layanan {
+    width: 25%;
+    justify-content: center;
+  }
+  .thumbnail {
+    width: 25%;
+  }
+}
+/* latihan 4 */
+.container-4 {
+  width: 800px;
+  margin: 50px auto;
+  display: flex;
+}
+
+.card {
+  border: 1px solid rgb(126, 101, 101);
+  border-radius: 10px;
+  background-color: white;
+  overflow: hidden;
+  margin: 10px;
+  box-shadow: 1px 1px 3px rgb(114, 114, 114);
+}
+
+.card .header {
+  background-color: salmon;
+  height: 200px;
+}
+
+.containt {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.card.besar {
+  transform: scale(1.1);
+}
+
+/* latihan 5 */
+.container-5 {
+  width: 500px;
+  height: 500px;
+  margin: 50px auto;
+  border: 5px solid lightskyblue;
+  display: flex;
+}
+
+.container-5 .kotak {
+  width: 100px;
+  height: 100px;
+  background-color: salmon;
+  color: white;
+  text-align: center;
+  margin: auto;
+  display: flex;
+}
+
+.kotak span {
+  margin: auto;
+}
